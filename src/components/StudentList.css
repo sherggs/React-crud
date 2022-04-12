@@ -1,0 +1,8 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.field{
+    margin-top: 20px;
+}
