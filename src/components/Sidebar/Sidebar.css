@@ -1,0 +1,99 @@
+/* Sidebar components CSS styling*/
+
+.sidebar-section{
+    flex: 3; /* occupy 3 parts out of 12 */
+    border-radius: 12px;
+    background-color:  #333C83;
+    margin: 40px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+/* styling the subsection section of the side bar*/
+.sidebar-subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* styling the image section of the side bar*/
+.sidebar-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 12px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    ;
+   
+
+}
+/* styling the titles section of the side bar*/
+.sidebar-titles{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin: 12px ;
+    padding: 6px;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    line-height: 22px ;
+    font-weight: 700;
+
+
+
+
+}
+/* styling the sidebar-category section of the side bar*/
+
+.sidebar-category{
+    padding-bottom: 27px;
+    padding-top: 17px;
+
+}
+
+/* styling the sidebar-list-item section of the side bar*/
+
+.sidebar-category-item{
+    list-style: none;
+    display: inline-block;
+    width: 50%;
+    margin-top: 12px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif; 
+    cursor: pointer;
+
+
+}
+
+/* styling the sidebar-socials-icons section of the side bar*/
+
+.sidebar-socials-icon{
+    margin-right: 12px;
+    cursor: pointer; /*  shows hand on hover over the icon */ 
+    font-size: 22px;
+    color: var(--primary-color);
+
+}
+/* styling the sidebar-about-text section of the side bar*/
+
+.sidebar-about-text{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    margin: 12px;
+    padding: 32px;
+    
+}
+
+
+
+
+/* 
+// Student Name: Ademola Jegede,
+// Student ID: 2122998,
+// course: Web Technologies */
