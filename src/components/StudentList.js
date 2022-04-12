@@ -1,6 +1,7 @@
 import  React, { useEffect, useState } from "react"
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './StudentList.css'
 
 
 const StudentList = () => {
@@ -23,9 +24,8 @@ const StudentList = () => {
     }
 
     return (
-        <div>
-        <Link to='/add' className="button  is-info mt-5 mb-2">Add New Student</Link>
-    <table className='table is-bordered is-striped is-narrow is-hoverable mt-2'>
+        <div className="list">
+    <table className='table is-bordered is-striped is-narrow is-hoverable mt-7'>
         <thead>
             <tr>
                 <th> ID </th>
@@ -56,7 +56,6 @@ const StudentList = () => {
         
         
 
-        
         
         
         </div>
