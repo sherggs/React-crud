@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
+import './StudentList.css'
+
 
 
 const AddStudent = () => {
@@ -24,7 +26,7 @@ return (
     <div>
             <form onSubmit={ addStudent }>
                 <div className="field">
-                    <label className="label">name</label>
+                    <label className="label"> NAME</label>
                     <input 
                         type="text" 
                         className="input" 
@@ -34,7 +36,7 @@ return (
                     />
                 </div>
                 <div className="field">
-                    <label className="label">Course</label>
+                    <label className="label">COURSE </label>
                     <input 
                         type="text" 
                         className="input" 
@@ -44,7 +46,7 @@ return (
                     />
                 </div>
                 <div className="field">
-                    <label className="label">Price</label>
+                    <label className="label">STUDENT NUMBER </label>
                     <input 
                         type="text" 
                         className="input" 
