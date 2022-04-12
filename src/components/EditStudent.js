@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from "axios";
+import './StudentList.css'
 
 const EditStudent = () => {
     const [name, setName] = useState('');
@@ -35,7 +36,7 @@ const EditStudent = () => {
         <div>
             <form onSubmit={ updateStudent }>
                 <div className="field">
-                    <label className="label">name</label>
+                    <label className="label">NAME </label>
                     <input 
                         type="text" 
                         className="input" 
@@ -45,7 +46,7 @@ const EditStudent = () => {
                     />
                 </div>
                 <div className="field">
-                    <label className="label">Course</label>
+                    <label className="label">COURSE </label>
                     <input 
                         type="text" 
                         className="input" 
@@ -55,7 +56,7 @@ const EditStudent = () => {
                     />
                 </div>
                 <div className="field">
-                    <label className="label">Price</label>
+                    <label className="label">STUDENT NUMBER</label>
                     <input 
                         type="text" 
                         className="input" 
