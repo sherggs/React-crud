@@ -5,16 +5,15 @@ function Header() {
   return (
     <div className="topbar">
     <div className="topbar-left">
-    <p className='web'> WEB TECH COURSEWORK </p>
+    <p className='web'> <a href='/'> CRUD STUDENT DATA <i class="fa-solid fa-house"></i></a></p>
     </div>
     <div className="topbar-center">
-        <ul className="topbar-list">
-            <li className="topbar-list-item">HOME <i class="fa-solid fa-house"></i></li>
-            <li className="topbar-list-item">ABOUT</li>
-        </ul>
+
     </div>
     <div className="topbar-right">
-    <li className="topbar-list-item"> ADD NEW</li>
+    <li className="topbar-list-item"> <a href='/add'> ADD NEW</a> </li>
+    <li className="topbar-list-item"> <a href='/about'> ABOUT</a></li>
+
     </div>
 </div>
   )
