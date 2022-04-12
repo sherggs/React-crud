@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;/*aligns item/content inside this parent vertically center*/
     justify-content: center;/*aligns item/content inside this parent horizontally center*/
+    list-style: none;/*get rid of dots from the li tag*/
+
 }
 .topbar-center{
     flex: 6;/*occupy 6 columns from total of 12parts*/
@@ -54,6 +56,10 @@ a, a:visited, a:hover, a:active {
     cursor: pointer;
     font-size: 20px;
     margin-left: 20px;
+}
+.web{
+    color: var(--primary-color);
+
 }
 
 
