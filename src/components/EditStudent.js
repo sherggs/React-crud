@@ -6,6 +6,7 @@ import './StudentList.css'
 
 const EditStudent = () => {
     const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
     const [course, setCourse] = useState('');
     const [number, setNumber] = useState('');
     const navigate = useNavigate();
@@ -15,6 +16,7 @@ const EditStudent = () => {
         e.preventDefault();
         await axios.post(`https://mi-linux.wlv.ac.uk/~2122998/coursework/public/coursework/update/${id}`,{
             name: name,
+            email: email,
             course: course,
             number: number
         });
@@ -27,6 +29,7 @@ const EditStudent = () => {
     const getStudentsById = async() =>{
         const response = await axios.get(`https://mi-linux.wlv.ac.uk/~2122998/coursework/public/coursework/${id}`)
         setName(response.data.name)
+        setEmail(response.data.email)
         setCourse(response.data.course)
         setNumber(response.data.number)
 
@@ -45,6 +48,17 @@ const EditStudent = () => {
                         placeholder="Please enter your FullName"
                     />
                 </div>
+                <div className="field">
+                    <label className="label">EMAIL ADDRESS </label>
+                    <input 
+                        type="text" 
+                        className="input" 
+                        value={ email } 
+                        onChange={ (e) => setEmail(e.target.value) }
+                        placeholder="Please enter your email address"
+                    />
+                     </div>
+
                 <div className="field">
                     <label className="label">COURSE </label>
                     <input 
