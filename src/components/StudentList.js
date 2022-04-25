@@ -30,7 +30,8 @@ const StudentList = () => {
             <tr>
                 <th> ID </th>
                 <th> Name </th>
-                <th> course  </th>
+                <th> Email Address </th>
+                <th> Course  </th>
                 <th>Student Number </th>
                 <th>Actions </th>
             </tr>
@@ -40,6 +41,7 @@ const StudentList = () => {
                 <tr key={coursework.id}>
                 <td> {index + 1} </td>
                 <td> {coursework.name} </td>
+                <td> {coursework.email} </td>
                 <td> {coursework.course} </td>
                 <td> {coursework.number} </td>
                 <td>
